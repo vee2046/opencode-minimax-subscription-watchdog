@@ -1,0 +1,44 @@
+{
+  "name": "opencode-minimax-subscription-watchdog",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenCode plugin for MiniMax 订阅额度：实时监控订阅配额、到阈值自动暂停、窗口重置后自动恢复，支持串行任务队列与桌面端可视化。",
+  "license": "MIT",
+  "author": "vee2046",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vee2046/opencode-minimax-subscription-watchdog.git"
+  },
+  "homepage": "https://github.com/vee2046/opencode-minimax-subscription-watchdog#readme",
+  "bugs": {
+    "url": "https://github.com/vee2046/opencode-minimax-subscription-watchdog/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "minimax",
+    "minimax-subscription",
+    "quota",
+    "watchdog",
+    "task-queue"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./rpc": "./src/rpc.ts",
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0",
+    "solid-js": "^1.9.0",
+    "vite": "^7.0.0",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}

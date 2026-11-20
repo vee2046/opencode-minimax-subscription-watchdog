@@ -1,0 +1,20 @@
+node_modules
+node_modules/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local/runtime data (generated outside the repo, never commit)
+quota-watchdog.log
+quota-watchdog-events.jsonl
+quota-watchdog-report.html
+
+# Editor/OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
